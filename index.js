@@ -89,3 +89,7 @@ var lineItem = {
 for (var field in lineItem) {
     console.log(field + ' : ' + lineItem[field]);
 }
+//case sensitive, no semi-colons necessary (although best practice is to have semi-colons)
+/*
+the obvious multiline comment
+*/
