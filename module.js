@@ -18,8 +18,21 @@ var e = 3.2e4;
 console.log(e); //32000
 var ne = 3.2e-4;
 console.log(ne); //0.00032
-
+var n = Number.MAX_VALUE + 1;//Infinity
+console.log(typeof n);//Number for Infinity
+console.log(typeof NaN);//Number for not a number
+isNaN(n) //test to see if not a number
+//strings
+var single = 'Patrick\'s string';// \to escape
+var mystr = "spaces    please  " //strings are immutable
+mystr.trim(); //meaning this alone will not change mystr unless it is assigned.
+//boolean
+var bool = true;
+var nobool = True;
 
 //undefined vs null
+var anyUnassigned; //undefined
+var anyNull = null;
+console.log(typeof anyNull);//object
 
 //scopes: global, function, block
