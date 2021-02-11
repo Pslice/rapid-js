@@ -36,3 +36,11 @@ var anyNull = null;
 console.log(typeof anyNull);//object
 
 //scopes: global, function, block
+var pID = '17';
+console.log(window.pID);//same as console.log(pID) in this case
+console.log(this === window); //returns true.
+
+var desc = 'old';
+function UpdateOld() {
+    desc = 'new';
+}
