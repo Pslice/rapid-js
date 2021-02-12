@@ -44,3 +44,14 @@ var desc = 'old';
 function UpdateOld() {
     desc = 'new';
 }
+console.log(desc); //returns old
+UpdateOld();
+console.log(desc); //returns new now
+
+'use strict';
+console.log(e) //reference error
+try {
+    throw 123;
+} catch (e) { //e is only defined in the catch block
+    console.log(e)
+}
