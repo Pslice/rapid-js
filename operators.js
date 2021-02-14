@@ -44,3 +44,11 @@ var numBin = parseInt('0001', 2); //1
 numBin = numBin << 2;
 console.log(numBin); //4 or parseInt('0100', 2);
 
+var totalBool = !3;//numbers are always true, except 0
+console.log(totalBool); //false because ! is also a boolean
+var value = !new Object();
+console.log(value);//false because objects are true
+var logicOr = true || false;//true
+var logicAnd = true && true;//true
+var logic = false && false; //false because false is a boolean and the && must be two true booleans
+
