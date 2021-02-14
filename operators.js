@@ -33,3 +33,14 @@ console.log(level++); //NaN
 var nullNum = null;
 console.log(nullNum++)//1, null is treated as 0 for numeric operations.
 
+var num1 = parseInt('1010', 2);
+var num2 = parseInt('0110', 2);
+console.log(num1);
+console.log(num2);
+var binNum = num1 | num2;
+console.log(binNum.toString(2));
+var binExNum = num1 ^ num2;
+var numBin = parseInt('0001', 2); //1
+numBin = numBin << 2;
+console.log(numBin); //4 or parseInt('0100', 2);
+
