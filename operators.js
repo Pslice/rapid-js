@@ -21,3 +21,15 @@ console.log(totalMultiply.toFixed(2)); //1.21
 //infinity
 totalMultiply = 2 * infinity; //infinity
 totalMultiply = -2 * infinity //-infinity
+
+var totalModulus = 9 % "   4   ";
+console.log(totalModulus); //1 works with strings and white space
+
+var totalIncrement = 5
+var next = totalIncrement++;
+console.log(totalIncrement);
+var level; //not assigned
+console.log(level++); //NaN
+var nullNum = null;
+console.log(nullNum++)//1, null is treated as 0 for numeric operations.
+
