@@ -52,3 +52,33 @@ var logicOr = true || false;//true
 var logicAnd = true && true;//true
 var logic = false && false; //false because false is a boolean and the && must be two true booleans
 
+
+if (true == 1) {
+    console.log(true);//yes
+} else {
+    console.log(false);
+}
+if (true == 2) {
+    console.log(true);
+} else {
+    console.log(false);//yes
+}
+var obj42 = {
+    valueOf: function () {
+        return 42;
+    }
+}
+if (42 == obj42) {
+    console.log('yes');
+}
+obj1 = {
+    name: 'Patrick'
+}
+obj2 = {
+    name: 'Patrick'
+}
+if (obj1 == obj2) {
+    console.log('Not this')
+} else {
+    console.log('Yes, not in the same memory space');
+}
