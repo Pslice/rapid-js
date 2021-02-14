@@ -14,3 +14,10 @@ var obj = {
 }
 var totalObj = 300 - obj;
 console.log(totalObj);//100
+
+var totalMultiply = 1.1 * 1.1;
+console.log(totalMultiply); //1.2100000000000002
+console.log(totalMultiply.toFixed(2)); //1.21
+//infinity
+totalMultiply = 2 * infinity; //infinity
+totalMultiply = -2 * infinity //-infinity
