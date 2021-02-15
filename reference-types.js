@@ -23,3 +23,7 @@ var entries = Array('PC', true, 17);
 console.log(entries instanceof Array);
 var arrEntries = ['PC', 'TC', 'MC'];
 console.log(arrEntries[3]);//undefined with no exception thrown
+var blankArray = [, , ,];
+console.log(blankArray.length)//3 in most browsers except 4 in older versions of IE
+entries[42] = 'Shacool';
+console.log(entries.length);//43 assigning a value to 42 created all the entries in between as blank
