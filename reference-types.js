@@ -13,3 +13,6 @@ o2.name = 'Tim'; //this will change o too
 var blog = {
     name: 'PC build'
 };
+var blogUpdated = blog;
+blogUpdated.name = 'ThermalTake';
+console.log(blog.name); //ThermalTake from the updated version
