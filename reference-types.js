@@ -16,3 +16,10 @@ var blog = {
 var blogUpdated = blog;
 blogUpdated.name = 'ThermalTake';
 console.log(blog.name); //ThermalTake from the updated version
+
+//array fundamentals
+//var entries  = new Array('PC','MC','TC');
+var entries = Array('PC', true, 17);
+console.log(entries instanceof Array);
+var arrEntries = ['PC', 'TC', 'MC'];
+console.log(arrEntries[3]);//undefined with no exception thrown
