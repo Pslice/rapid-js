@@ -16,7 +16,7 @@ var probject = {
     due: function () {
         return true;
     },
-    team: ['Hol Horse', 'Patrick', 'Jotaro'];
+    team: ['Hol Horse', 'Patrick', 'Jotaro']
 };
 console.log(probject.name);
 console.log(probject.team[1]);
@@ -32,3 +32,7 @@ var tasker = {
     ]
 }
 console.log(tasker.tasks[1].name);
+//prototype
+var protoProject = anyObject;
+protoProject.someFunction();
+//this will look at protoProject.prototype.prototype->until it finds the function
