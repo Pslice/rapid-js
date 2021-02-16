@@ -36,3 +36,15 @@ console.log(tasker.tasks[1].name);
 var protoProject = anyObject;
 protoProject.someFunction();
 //this will look at protoProject.prototype.prototype->until it finds the function
+
+var protoman = {
+    name: 'Megaman'
+};
+console.log(protoman.toString()); //[object Object]
+console.log(typeof Object.prototype); //object
+console.log(typeof Object.prototype.toString); //function
+
+console.log(protoman.prototype); //undefined
+console.log(protoman.__proto__); //object, but should never use __proto__
+
+
