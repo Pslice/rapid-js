@@ -48,3 +48,17 @@ console.log(sortedArray.sort()); //sorts by string element [1, 10, 2, 3, 4, 7, 9
 var dt = new Date('Patrick'); //will return invalid date
 var realDate = new Date('02/14/2021');
 var stringDate = new Date('July 7 2021');
+
+var blogText = "Patrick";
+var pattern = /rick/g;//search at and the g flag is global
+var result = pattern.exec(blogText);
+console.log(pattern.test(blogText)); //true
+console.log(result); //at index 3
+
+var searchText = 'My name is PAT!';
+var patern = /a/g; //look for a
+var result = searchText.match(patern);
+console.log(result);//returns array ['a']
+patern = /a/gi; //i for case insensitive, could also do /[aA]/g
+result = searchText.match(patern);
+console.log(result);//returns array ['a','a'];
