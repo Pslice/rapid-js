@@ -46,5 +46,10 @@ console.log(typeof Object.prototype.toString); //function
 
 console.log(protoman.prototype); //undefined
 console.log(protoman.__proto__); //object, but should never use __proto__
+console.log(protoman.__proto__ === Object.prototype); //true every object has this prototype object
+
+var secretProject = Object.create(project);
+console.log(secretProject.securityLevel); //3
+
 
 
