@@ -79,3 +79,4 @@ var protoProj = {
 };
 var secretProj = Object.create(protoProj);
 console.log(Object.prototype.isPrototypeOf(secretProj)); //true, it will walk up the prototype chain
+console.log('security' in secretProj);//returns true
