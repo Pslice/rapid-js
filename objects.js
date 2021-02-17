@@ -54,3 +54,9 @@ console.log(secretProject.securityLevel); //3
 console.log(secretProject.__proto__ === Object.prototype);//this is false because the create method will create an object with prototype but it will be another level in based on the original.
 console.log(secretProject.__proto__.__proto__ === Object.prototype);//true
 
+var defineTask = {};
+Object.defineProperty(defineTask, 'text', {
+    value: 'Get this job done!',
+    writable: true //must be set, by default it is readonly
+});
+defineTask.text = defineTask.text + " yes";
