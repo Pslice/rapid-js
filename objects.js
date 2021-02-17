@@ -73,3 +73,9 @@ Object.defineProperties(nextTask, {
 console.log(nextTask.text + " Due: " + nextTask.dueDate);
 var descriptor = Object.getOwnPropertyDescriptor(nextTask.text, 'p');
 console.log(descriptor);
+
+var protoProj = {
+    security: 2
+};
+var secretProj = Object.create(protoProj);
+console.log(Object.prototype.isPrototypeOf(secretProj)); //true, it will walk up the prototype chain
