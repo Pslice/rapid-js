@@ -48,8 +48,9 @@ console.log(protoman.prototype); //undefined
 console.log(protoman.__proto__); //object, but should never use __proto__
 console.log(protoman.__proto__ === Object.prototype); //true every object has this prototype object
 
-var secretProject = Object.create(project);
+var secretProject = Object.create(project); //create method
 console.log(secretProject.securityLevel); //3
 
-
+console.log(secretProject.__proto__ === Object.prototype);//this is false because the create method will create an object with prototype but it will be another level in based on the original.
+console.log(secretProject.__proto__.__proto__ === Object.prototype);//true
 
