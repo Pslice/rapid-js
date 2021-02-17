@@ -70,3 +70,6 @@ Object.defineProperties(nextTask, {
         value: '1/15/22'
     }
 });
+console.log(nextTask.text + " Due: " + nextTask.dueDate);
+var descriptor = Object.getOwnPropertyDescriptor(nextTask.text, 'p');
+console.log(descriptor);
