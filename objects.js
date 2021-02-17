@@ -60,3 +60,13 @@ Object.defineProperty(defineTask, 'text', {
     writable: true //must be set, by default it is readonly
 });
 defineTask.text = defineTask.text + " yes";
+
+var nextTask = {};
+Object.defineProperties(nextTask, {
+    'text': {
+        value: 'New Task'
+    },
+    'dueDate': {
+        value: '1/15/22'
+    }
+});
