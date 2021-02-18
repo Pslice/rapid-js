@@ -3,4 +3,5 @@ var Employee = function (name) {
 };
 var newEmployee = new Employee('PC');
 
-console.log(typeof newEmployee);
+console.log(typeof newEmployee); //object
+console.log(newEmployee.name); //PC
