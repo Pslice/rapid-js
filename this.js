@@ -14,3 +14,12 @@ var employee = {
 };
 employee.updateSalary();//Object {name: 'Jeff'}
 employee.newSalary();//window is this (logged for browsers)
+
+var Address = function (line1) {
+    this.line1 = line1;
+};
+Address.prototype.updateZip = function () {
+    console.log(this);
+};
+var addr = new Address('399 reservation');
+addr.updateZip();
