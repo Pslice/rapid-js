@@ -24,7 +24,11 @@ Address.prototype.updateZip = function () {
 var addr = new Address('399 reservation');
 addr.updateZip();
 
-var zipCode = function () {
+var zipCode = function (newZip, country) {
     console.log(this);
 }
-zipCode.call({ zip: '93933' });
+var zip = {
+    zip: '93933'
+}
+zipCode.call(zip, '93955', 'US');//call
+zipCode.apply(zip, ['93955', 'US']);//use apply to pass array as arguments
