@@ -23,3 +23,8 @@ Address.prototype.updateZip = function () {
 };
 var addr = new Address('399 reservation');
 addr.updateZip();
+
+var zipCode = function () {
+    console.log(this);
+}
+zipCode.call({ zip: '93933' });
