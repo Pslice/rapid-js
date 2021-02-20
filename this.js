@@ -41,3 +41,6 @@ var salaryUpdater = function () {
     };
     return generator;
 }
+var updateFn = salaryUpdater(50000);
+
+console.log(updateFn());
