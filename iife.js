@@ -8,3 +8,10 @@ var Jquery = {};
     ns.name = 'None';
     console.log($ === Jquery);
 })(app, Jquery);
+
++function () {
+    var employeeName = 'Jill';
+    console.log('Executed');
+}();
+
+console.log(employeeName);
