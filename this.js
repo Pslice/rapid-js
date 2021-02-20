@@ -34,5 +34,10 @@ zipCode.call(zip, '93955', 'US');//call
 zipCode.apply(zip, ['93955', 'US']);//use apply to pass array as arguments
 
 var salaryUpdater = function () {
-
+    var currentSalary = salary;
+    var generator = function () {
+        currentSalary *= 2;
+        return currentSalary;
+    };
+    return generator;
 }
