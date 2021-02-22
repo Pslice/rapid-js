@@ -8,10 +8,12 @@ var OrgChart = {
         }
     ]
 }
-var fn = function (topEmployee) {
+var fn = function showAllEmployees(topEmployee) {
     console.log(topEmployee.name);
     for (var i = 0; i < topEmployee.subordinates.length; i++) {
-        fn(topEmployee.subordinates[i]);
+        showAllEmployees(topEmployee.subordinates[i]);
     }
+};
 
-}
+var fn2 = fn;
+fn2(OrgChart);
