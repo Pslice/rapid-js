@@ -11,5 +11,8 @@ clearTimeout(id);
 
 var interval = setInterval(function () {
     var secs = new Date().getSeconds();
-    console.log(secs)
-})
+    console.log(secs);
+    if (secs === 10) {
+        clearInterval(interval);
+    }
+}, 1000);
