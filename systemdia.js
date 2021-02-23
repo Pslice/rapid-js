@@ -6,3 +6,6 @@ if (confirm('Delete EVERYTHING?!')) {
 } else {
     console.log('Nope');
 }
+
+var result = prompt("You good?");
+console.info(result);
