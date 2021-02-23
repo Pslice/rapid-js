@@ -8,4 +8,5 @@ if (confirm('Delete EVERYTHING?!')) {
 }
 
 var result = prompt("You good?");
-console.info(result);
+console.info(result); //null for no value entered
+
