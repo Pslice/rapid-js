@@ -1,11 +1,12 @@
 <article id="article1">
     <h3>Yo Title</h3>
-    <p>Paragraph 1</p>
+    <p class='paraClass'>Paragraph 1</p>
     <p>Paragraph 2</p>
 </article>
 
 <script>
-    var element = document.getElementById('article1');
-    var paraElement = document.getElementsByTagName('p');
-    console.log(element);
+    var idElement = document.getElementById('article1');
+    var tagElement = document.getElementsByTagName('p');
+    var classElement = document.getElementsByClassName('paraClass');
+    console.log(idElement);
 </script>
