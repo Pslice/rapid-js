@@ -1,4 +1,4 @@
-<article id="article1">
+<article id="article1" class="attributeToGet"">
     <h3>Yo Title</h3>
     <p class='paraClass'>Paragraph 1</p>
     <p>Paragraph 2</p>
@@ -8,5 +8,6 @@
     var idElement = document.getElementById('article1');
     var tagElement = document.getElementsByTagName('p');
     var classElement = document.getElementsByClassName('paraClass');
-    console.log(idElement);
+    console.log(idElement.getAttribute('class'));
+    console.log(idElement.childNodes);
 </script>
