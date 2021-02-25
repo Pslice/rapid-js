@@ -1,7 +1,7 @@
 <article id="article1" class="attributeToGet"">
     <h3>Yo Title</h3>
     <p class='paraClass'>Paragraph 1</p>
-    <p>Paragraph 2</p>
+    <p class='paraClass'>Paragraph 2</p>
 </article>
 
 <script>
@@ -11,5 +11,6 @@
     console.log(idElement.getAttribute('class'));
     console.log(idElement.childNodes);
     var qSelector = document.querySelector('article');
-    var qSelector = document.querySelector('.paraClass');
+    var qSelector = document.querySelector('.paraClass');//just first instance
+    var qSelector = document.querySelectorAll('.paraClass');//all instances
 </script>
