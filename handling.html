@@ -3,7 +3,8 @@
 
 <script>
     var button = document.getElementById('submit1')
-    button.addEventListener('click', function () {
-        console.log('button clicked');
-    });
+    var submitHandler = function formSubmitHandler() {
+        console.log('in SubmitHandler()');
+    };
+    button.addEventListener('click', submitHandler);
 </script>
