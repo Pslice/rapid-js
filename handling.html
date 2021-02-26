@@ -7,4 +7,5 @@
         console.log('in SubmitHandler()');
     };
     button.addEventListener('click', submitHandler);
+    button.removeEventListener('click', submitHandler); //need to have submitHandler to remove it and nothing will show in console.
 </script>
