@@ -9,3 +9,4 @@ try {
 } finally {
     console.log('final');
 }
+
